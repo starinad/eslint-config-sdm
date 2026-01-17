@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-sdm",
+  "version": "0.0.0",
+  "description": "Shared ESLint configuration for SDM projects",
+  "type": "module",
+  "exports": {
+    ".": "./eslint.config.mjs"
+  },
+  "files": [
+    "eslint.config.mjs"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "sdm"
+  ],
+  "author": "Dmytro Staryna",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  },
+  "lint-staged": {
+    "*.mjs": "eslint --fix"
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
+}

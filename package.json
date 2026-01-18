@@ -35,5 +35,9 @@
   },
   "scripts": {
     "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starinad/eslint-config-sdm.git"
   }
 }

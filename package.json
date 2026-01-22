@@ -4,8 +4,12 @@
   "description": "Shared ESLint configuration for SDM projects",
   "type": "module",
   "exports": {
-    ".": "./eslint.config.mjs"
+    ".": {
+      "types": "./eslint.config.d.ts",
+      "default": "./eslint.config.mjs"
+    }
   },
+  "types": "./eslint.config.d.ts",
   "files": [
     "eslint.config.mjs"
   ],
